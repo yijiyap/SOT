@@ -35,13 +35,23 @@
         </button>
         <!-- make this list show the bullet points and not so flushed to the left -->
         <Collapse :when="headers[index].isExpanded" class="v-collapse">
-            <ol>
-                <li v-for="body in header.body">
+            <ol class="ml-6 list-disc">
+                <li v-for="body in header.body" class="ml-6">
                     {{ body }}
                 </li>
             </ol>
-
         </Collapse>
+    </div>
+
+    <div class="mt-10">
+
+    </div>
+
+    <div v-for="image in images">
+        <div>
+            <img :src="image" class="rounded-t w-full object-contain
+            " alt="">
+        </div>
     </div>
 </template>
 
