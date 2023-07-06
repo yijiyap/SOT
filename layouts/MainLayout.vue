@@ -28,7 +28,7 @@
                     <NuxtLink to="/custom">Custom</NuxtLink>
                 </li>
                 <li>
-                    <NuxtLink to="/parts">parts</NuxtLink>
+                    <NuxtLink to="/parts">Parts</NuxtLink>
                 </li>
                 <li>
                     <NuxtLink to="/FAQ">FAQ</NuxtLink>

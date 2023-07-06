@@ -1,6 +1,6 @@
 <template>
     <MainLayout />
-    <div id="homeBody" class="mt-10">
+    <div id="homeBody" class="mt-10 max-auto px-2">
         <div class="flex">
             <div class="mx-auto text-3xl block relative">
                 <div class="font-semibold">Main Watches</div>
@@ -14,10 +14,10 @@
             </div>
         </div>
 
-        <div class="grid xl:grid-cols-3 lg:grid-cols-3 md:grid-cols-1 sm:grid-cols-1 grid-cols-1 gap-4 flex mt-10">
-            <div v-if="products" v-for="product in products" :key="product" class="flex">
-                <Product :product="product" class="mx-auto max-w-[500px] max-h-[750px] flex" />
-            </div>
+        <div class="grid xl:grid-cols-3 lg:grid-cols-1 md:grid-cols-1 sm:grid-cols-1 grid-cols-1 gap-4 flex mt-10">
+                <div v-if="products" v-for="product in products" :key="product" class="flex">
+                    <Product :product="product" class="mx-auto" />
+                </div>
         </div>
     </div>
 </template>
